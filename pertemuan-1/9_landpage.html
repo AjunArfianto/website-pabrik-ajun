@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT Ajun Arfianto</title>
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", Arial, sans-serif;
+        }
+
+        body {
+            background: #f3f4f6;
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: white;
+            width: 100%;
+            padding: 20px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 26px;
+            font-weight: 700;
+            color: #6a00ff;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #333;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #6a00ff;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            height: 500px;
+            background: url('https://i.pinimg.com/1200x/a0/a0/10/a0a010550fbedc8c454307b72a710934.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45);
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 50px;
+            z-index: 1;
+            text-align: center;
+            max-width: 700px;
+        }
+
+        /* ===== SECTION WRAPPER ===== */
+        section {
+            padding: 70px 60px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 50px;
+            color: #222;
+        }
+
+        /* ===== LAYANAN GRID ===== */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+        }
+
+        .service h3 {
+            color: #6a00ff;
+            margin-bottom: 10px;
+        }
+
+        /* ===== KONTAK ===== */
+        .contact-box {
+            background: white;
+            padding: 40px;
+            border-radius: 14px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-box input, .contact-box textarea {
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-box button {
+            margin-top: 15px;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            background: #6a00ff;
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #1f1f1f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">PT Ajun Arfianto</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<section id="home" class="hero" style="position:relative; height:500px; overflow:hidden;">
+    <video autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; filter:brightness(60%);">
+        <source src="cv/src/img/Video Project 1.mp4" type="video/mp4" />
+    </video>
+    <h1 style="position:relative; z-index:2; color:white; font-size:50px; text-align:center; max-width:700px;">Solusi Industri <br>Modern & Profesional</h1>
+</section>
+
+<section id="tentang">
+    <h2 class="section-title">Tentang Perusahaan</h2>
+    <div style="display:flex; gap:40px; align-items:center; flex-wrap:wrap;">
+        <img src="https://images.pexels.com/photos/9754815/pexels-photo-9754815.jpeg" 
+             style="width:380px; border-radius:12px; box-shadow:0 5px 20px rgba(0,0,0,0.15);" />
+
+        <div style="flex:1; min-width:300px;">
+            <p style="font-size:18px; line-height:1.8; color:#444;">
+                PT Ajun Arfianto adalah perusahaan yang bergerak di bidang industri modern,
+                menyediakan layanan produksi, perawatan mesin, serta instalasi jaringan skala besar.
+                Kami berkomitmen memberikan pelayanan profesional, inovatif, dan berkualitas tinggi
+                untuk mendukung kebutuhan industri masa kini.
+            </p>
+            <p style="font-size:18px; line-height:1.8; color:#444; margin-top:15px;">
+                Dengan tenaga ahli berpengalaman dan fasilitas yang memadai, kami siap menjadi
+                mitra terbaik dalam berbagai proyek industri maupun teknologi.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="layanan">
+    <h2 class="section-title">Layanan Profesional Kami</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Produksi Pabrik</h3>
+            <p>Produksi industri skala besar dengan kualitas premium.</p>
+        </div>
+        <div class="service">
+            <h3>Perawatan Mesin</h3>
+            <p>Engineer berpengalaman siap menangani perbaikan mesin.</p>
+        </div>
+        <div class="service">
+            <h3>Instalasi Jaringan</h3>
+            <p>Kami menyediakan solusi infrastruktur jaringan modern.</p>
+        </div>
+    </div>
+</section>
+
+<section id="kontak">
+    <h2 class="section-title">Kontak &amp; Hubungi Kami</h2>
+
+    <div style="display:flex; gap:40px; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
+        <!-- INFO KONTAK -->
+        <div style="flex:1; min-width:320px; background:white; padding:30px; border-radius:14px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom:20px; color:#6a00ff;">Informasi Kontak</h3>
+            <p><strong>📞 Telepon:</strong> 0812-9341-7366</p>
+            <p><strong>📧 Email:</strong> ajhunarfianto@gmail.com</p>
+            <p><strong>📍 Alamat:</strong> Cikerut, Anggrek Street, Indonesia</p>
+            <a href="https://wa.me/6281234567890" style="display:inline-block; margin-top:20px; padding:12px 20px; background:#25D366; color:white; border-radius:8px; text-decoration:none; font-weight:bold;">Hubungi via WhatsApp</a>
+
+            <h3 style="margin-top:30px; margin-bottom:10px; color:#6a00ff;">Lokasi Kami</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3832.588800663774!2d106.0607006646825!3d-6.0297465304731706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418f599df0bcfb%3A0x4e1e80e65a1f874!2scikerut!5e0!3m2!1sid!2sid!4v1763735381963!5m2!1sid!2sid" width="100%" height="250" style="border:0; border-radius:12px; margin-top:10px;" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <!-- FORM KONTAK -->
+        <div style="flex:1; min-width:320px; background:white; padding:30px; border-radius:14px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom:20px; color:#6a00ff;">Kirim Pesan</h3>
+            <form>
+                <input type="text" placeholder="Nama Anda" style="width:100%; padding:15px; border-radius:10px; border:1px solid #ccc; margin-bottom:15px;">
+                <input type="email" placeholder="Email Anda" style="width:100%; padding:15px; border-radius:10px; border:1px solid #ccc; margin-bottom:15px;">
+                <textarea rows="5" placeholder="Pesan Anda" style="width:100%; padding:15px; border-radius:10px; border:1px solid #ccc;"></textarea>
+                <button style="margin-top:15px; padding:15px; width:100%; border:none; background:#6a00ff; color:white; border-radius:10px; font-weight:bold; cursor:pointer;">Kirim</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 PT Ajun Arfianto. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
